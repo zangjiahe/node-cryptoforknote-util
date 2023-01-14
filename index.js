@@ -172,7 +172,7 @@ module.exports.RavenBlockTemplate = function(rpcData, poolAddress) {  //add neox
 
         var strCommunityAutonomousAddress 		= rpcData.CommunityAutonomousAddress;
         var strCommunityAutonomousAddressHash 	= bitcoin.address.fromBase58Check(strCommunityAutonomousAddress).hash;
-        console.log("strCommunityAutonomousAddress",strCommunityAutonomousAddress)
+        //console.log("strCommunityAutonomousAddress",strCommunityAutonomousAddress)
         txCoinbase.addOutput(
             scriptCompile(strCommunityAutonomousAddressHash),
             Math.floor(rpcData.CommunityAutonomousValue)
